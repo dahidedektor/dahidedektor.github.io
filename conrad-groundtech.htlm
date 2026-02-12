@@ -2,26 +2,102 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Yeraltı Görüntüleme Sistemleri</title>
+<title>Conrad-Groundtech</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-body{font-family:Arial;background:#111;color:#eee;margin:0;padding:40px}
-.product{background:#1c1c1c;padding:20px;margin-bottom:30px;border-radius:8px}
-img{max-width:300px;border-radius:8px}
-a{color:#f5c400;text-decoration:none}
+
+body{
+    font-family:Arial;
+    background:#111;
+    color:#eee;
+    margin:0;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+}
+
+a{
+    color:#f5c400;
+    text-decoration:none;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h2{
+    font-size:18px;
+    margin-top:15px;
+}
+
+.card p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+.price{
+    color:#f5c400;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 15px;
+    border:none;
+    background:#25d366;
+    color:#fff;
+    border-radius:6px;
+    cursor:pointer;
+    width:100%;
+    font-weight:bold;
+}
+
 </style>
+
 </head>
 <body>
 
 <h1>Conrad-Groundtech</h1>
-<a href="index.html">← Ana Sayfa</a>
+<p style="text-align:center;"><a href="index.html">← Ana Sayfa</a></p>
 
-<div class="product">
+<div class="gallery">
+
+<div class="card">
+<img src="images/pro-800.jpg">
 <h2>PRO-800 Yer Altı Görüntüleme</h2>
-<img src="images/atpro.jpg">
 <p>Conrad PRO - 800 yeni özellikleri ve güncellenmiş içeriğiyle kullanımı daha basit ve daha profesyonel.
 Conrad PR0 – 800 arama yapılan hedef alandaki, düzensizlikleri algılayan elektro-manyetik pulse metoduna dayanmaktadır. Böylece, cihaz doğal özellikler olan katman oluşumlarını, boşlukları , yeraltı su seviyelerinin yanısıra mezar yada gömülü nesneleri algılar ve bulmanızı sağlar. Basit kullanımı ile size en büyük yardımcı CONRAD PRO – 800
 Üstün mikroişlemci teknolojisi sayesinde toprak ayarı, derinlik ölçümü ve 16 adet hafızada data saklama cihaz tarafından otomatik olarak yapılmaktadır. 3 Boyutlu grafik ile analiz edilen bölgenin değerlendirilmesi bilgisayar aracılığıyla canlı, renkli ve detaylı olarak yapılabilir ve böylece çalışmalarınızı daha profesyonel hale getirebilirsiniz..</p>
-<p><strong>Fiyat: 54.000 TL</strong></p>
+<p class="price">54.000 TL</p>
+<button onclick="window.location.href='https://wa.me/905549969820'">
+WhatsApp ile Fiyat Sor
+</button>
 </div>
 
 </body>
