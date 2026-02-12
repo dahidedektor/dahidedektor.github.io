@@ -2,8 +2,9 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Garrett Dedektörler</title>
+<title>Garret Dedektörler</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 body{
@@ -25,47 +26,60 @@ a{
 
 .gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
     margin-top:40px;
 }
 
 .card{
     background:#1c1c1c;
-    padding:15px;
-    border-radius:10px;
-    text-align:center;
+    padding:20px;
+    border-radius:12px;
     transition:0.3s;
 }
 
 .card:hover{
-    transform:scale(1.05);
+    transform:scale(1.03);
 }
 
 .card img{
     width:100%;
-    height:220px;
+    height:250px;
     object-fit:cover;
-    border-radius:8px;
+    border-radius:10px;
+}
+
+.card h2{
+    font-size:18px;
+    margin-top:15px;
+}
+
+.card p{
+    font-size:14px;
+    line-height:1.6;
 }
 
 .price{
     color:#f5c400;
+    font-size:18px;
     font-weight:bold;
     margin-top:10px;
 }
 
 button{
-    margin-top:10px;
+    margin-top:15px;
     padding:10px 15px;
     border:none;
     background:#25d366;
     color:#fff;
-    border-radius:5px;
+    border-radius:6px;
     cursor:pointer;
+    width:100%;
+    font-weight:bold;
 }
 
 </style>
+
 </head>
 <body>
 
