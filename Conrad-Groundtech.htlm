@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Yeraltı Görüntüleme Sistemleri</title>
+<style>
+body{font-family:Arial;background:#111;color:#eee;margin:0;padding:40px}
+.product{background:#1c1c1c;padding:20px;margin-bottom:30px;border-radius:8px}
+img{max-width:300px;border-radius:8px}
+a{color:#f5c400;text-decoration:none}
+</style>
+</head>
+<body>
+
+<h1>Conrad-Groundtech</h1>
+<a href="index.html">← Ana Sayfa</a>
+
+<div class="product">
+<h2>PRO-800 Yer Altı Görüntüleme</h2>
+<img src="images/atpro.jpg">
+<p>Conrad PRO - 800 yeni özellikleri ve güncellenmiş içeriğiyle kullanımı daha basit ve daha profesyonel.
+Conrad PR0 – 800 arama yapılan hedef alandaki, düzensizlikleri algılayan elektro-manyetik pulse metoduna dayanmaktadır. Böylece, cihaz doğal özellikler olan katman oluşumlarını, boşlukları , yeraltı su seviyelerinin yanısıra mezar yada gömülü nesneleri algılar ve bulmanızı sağlar. Basit kullanımı ile size en büyük yardımcı CONRAD PRO – 800
+Üstün mikroişlemci teknolojisi sayesinde toprak ayarı, derinlik ölçümü ve 16 adet hafızada data saklama cihaz tarafından otomatik olarak yapılmaktadır. 3 Boyutlu grafik ile analiz edilen bölgenin değerlendirilmesi bilgisayar aracılığıyla canlı, renkli ve detaylı olarak yapılabilir ve böylece çalışmalarınızı daha profesyonel hale getirebilirsiniz..</p>
+<p><strong>Fiyat: 54.000 TL</strong></p>
+</div>
+
+</body>
+</html>
