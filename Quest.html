@@ -3,32 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <title>Quest Dedektörler</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-body{font-family:Arial;background:#111;color:#eee;margin:0;padding:40px}
-.product{background:#1c1c1c;padding:20px;margin-bottom:30px;border-radius:8px}
-img{max-width:300px;border-radius:8px}
-a{color:#f5c400;text-decoration:none}
+
+body{
+    font-family:Arial;
+    background:#111;
+    color:#eee;
+    margin:0;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+}
+
+a{
+    color:#f5c400;
+    text-decoration:none;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h2{
+    font-size:18px;
+    margin-top:15px;
+}
+
+.card p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+.price{
+    color:#f5c400;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 15px;
+    border:none;
+    background:#25d366;
+    color:#fff;
+    border-radius:6px;
+    cursor:pointer;
+    width:100%;
+    font-weight:bold;
+}
+
 </style>
 </head>
 <body>
 
 <h1>Quest Dedektör Modelleri</h1>
-<a href="index.html">← Ana Sayfa</a>
+<p style="text-align:center;"><a href="index.html">← Ana Sayfa</a></p>
 
-<div class="product">
+<div class="gallery">
+
+<div class="card">
+<img src="images/x1ıdmax.jpg">
 <h2>X1 IDmaxX Dedektör</h2>
-<img src="images/x1.jpg">
 <p>Quest X1 IDmaxX, başlangıç ve hobi seviyesi kullanıcılar için tasarlanmış, taşınabilir, hafif ve kullanıcı dostu bir metal dedektördür. Açık hava aktivitelerinde, kamp alanlarında veya sahil aramalarında pratik kullanım sunar. Katlanabilir gövdesi, dahili şarj edilebilir bataryası ve sezgisel arayüzü ile öne çıkar.
-</p>
-<p><strong>Fiyat: 13.475 TL</strong></p>
+<p class="price">13.470 TL</p>
+<button onclick="window.location.href='https://wa.me/905549969820'">
+WhatsApp ile Fiyat Sor
+</button>
 </div>
 
-<div class="product">
-<h2>Quest V80 Dedektör</h2>
+<div class="card">
 <img src="images/v80.jpg">
+<h2>Quest V80 Dedektör</h2>  
 <p>Quest V80 dedektör, 5 ile 80 KHz frekans aralığına sahiptir ve tüm arama frekanslarını aynı anda kullanmanızı sağlayan HyperQ teknolojisine sahiptir. 5m'ye kadar su geçirmezdir ve 49cm'ye kadar kısaltılabilen teleskopik şafta sahiptir. V80 dedektör, Quest Wirefree Pro kablosuz kulaklıkla beraber gelir ve optimum performans için 28cm x 26cm Blizzard arama başlığına sahiptir. Dahili 5000mAh Li-Po pil, USB Type-C kablosuyla şarj edilebilir ve tamamen şarj edildiğinde 10 ile 15 saat dayanır. Kısacası, mükemmel bir fiyat/performans oranına sahip en iyi profesyonel dedektör modellerinden biridir.
 .</p>
-<p><strong>Fiyat: 67.900 TL</strong></p>
+<p class="price">67.900 TL</p>
+<button onclick="window.location.href='https://wa.me/905549969820'">
+WhatsApp ile Fiyat Sor
+</button>
 </div>
 
 </body>
