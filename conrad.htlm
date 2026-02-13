@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Conrad-Groundtech</title>
+<title>Conrad</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -83,7 +83,7 @@ button{
 </head>
 <body>
 
-<h1>Conrad-Groundtech</h1>
+<h1>Conrad</h1>
 <p style="text-align:center;"><a href="index.html">← Ana Sayfa</a></p>
 
 <div class="gallery">
