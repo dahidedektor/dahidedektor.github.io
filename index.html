@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
@@ -55,6 +54,38 @@ nav a:hover{
     color:#fff;
 }
 
+/* HERO SLIDER */
+
+.hero{
+    width:100%;
+    height:450px;
+    overflow:hidden;
+    position:relative;
+}
+
+.slider{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.slider img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:opacity 1s ease-in-out;
+}
+
+.slider img.active{
+    opacity:1;
+}
+
+/* GENEL SECTION */
+
 section{
     padding:80px 8%;
 }
@@ -72,13 +103,58 @@ h2{
     font-size:28px;
 }
 
-#anasayfa{
-    text-align:center;
+/* ÖNE ÇIKANLAR */
+
+#oneCikanlar{
+    padding:80px 8%;
 }
 
-#anasayfa .card{
-    background:linear-gradient(145deg,#1a1a1a,#111);
+.featured-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
 }
+
+.featured-card{
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.featured-card:hover{
+    transform:translateY(-8px);
+}
+
+.featured-card img{
+    width:100%;
+    height:200px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.featured-card h3{
+    margin-bottom:10px;
+}
+
+.featured-card p{
+    color:#f5c400;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.featured-card a{
+    text-decoration:none;
+    background:#f5c400;
+    color:#000;
+    padding:8px 15px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* MARKALAR */
 
 #markalar h2{
     text-align:center;
@@ -103,10 +179,6 @@ h2{
 .brand-card:hover{
     transform:translateY(-8px);
     border:1px solid #f5c400;
-}
-
-.brand-card h3{
-    margin-bottom:10px;
 }
 
 .brand-card a{
@@ -148,14 +220,6 @@ footer{
 .whatsapp:hover{
     transform:scale(1.1);
 }
-
-@media(max-width:768px){
-    nav{
-        gap:10px;
-        font-size:14px;
-    }
-}
-
 </style>
 </head>
 <body>
@@ -170,6 +234,15 @@ footer{
 </nav>
 </header>
 
+<!-- REKLAM SLIDER -->
+<section class="hero">
+<div class="slider">
+<img src="images/reklam1.jpg" class="active">
+<img src="images/reklam2.jpg">
+<img src="images/reklam3.jpg">
+</div>
+</section>
+
 <section id="anasayfa">
 <div class="card">
 <h2>Türkiye'nin Güvenilir Dedektör Platformu</h2>
@@ -178,51 +251,45 @@ profesyonel çözümler sunuyoruz. En iyi markalar, uygun fiyat ve teknik destek
 </div>
 </section>
 
+<!-- ÖNE ÇIKAN ÜRÜNLER -->
+<section id="oneCikanlar">
+<h2 style="text-align:center;">Öne Çıkan Ürünler</h2>
+
+<div class="featured-grid">
+
+<div class="featured-card">
+<img src="images/atpro.jpg">
+<h3>Garrett AT Pro</h3>
+<p>49.950 TL</p>
+<a href="garrett.html">Detay Gör</a>
+</div>
+
+<div class="featured-card">
+<img src="images/ace400.jpg">
+<h3>Garrett ACE 400i</h3>
+<p>30.650 TL</p>
+<a href="garrett.html">Detay Gör</a>
+</div>
+
+<div class="featured-card">
+<img src="images/minelab1.jpg">
+<h3>Minelab Equinox</h3>
+<p>Fiyat Sorunuz</p>
+<a href="minelab.html">Detay Gör</a>
+</div>
+
+</div>
+</section>
+
+<!-- MARKALAR -->
 <section id="markalar">
 <h2>Markalarımız</h2>
-
 <div class="brand-grid">
-
-<div class="brand-card">
-<img src="images/minelab-logo.png" alt="Minelab Logo">
-<a href="minelab.html">Ürünleri Gör</a>
-</div>
-
-<div class="brand-card">
-<img src="images/garret-logo.png" alt="Garret Logo">
-<a href="garrett.html">Ürünleri Gör</a>
-</div>
-
-<div class="brand-card">
-<img src="images/nokta-logo.png" alt="Nokta Logo">
-<a href="nokta.html">Ürünleri Gör</a>
-</div>
-
-<div class="brand-card">
-<img src="images/quest-logo.png" alt="Quest Logo">
-<a href="Quest.html">Ürünleri Gör</a>
-</div>
-
-<div class="brand-card">
-<img src="images/xp-logo.png" alt="Xp Logo">
-<a href="xp.html">Ürünleri Gör</a>
-</div>
-
-<div class="brand-card">
-<img src="images/detech-logo.png" alt="detech Logo">
-<a href="Detech.html">Ürünleri Gör</a>
-</div>
-
-<div class="brand-card">
-<img src="images/conrad-logo.png" alt="Conrad Logo">
-<a href="Conrad-Groundtech.html">Ürünleri Gör</a>
-</div>
-
-<div class="brand-card">
-<h3>Gladiatör</h3>
-<a href="Gladiatör.html">Ürünleri Gör</a>
-</div>
-
+<div class="brand-card"><a href="minelab.html">Minelab</a></div>
+<div class="brand-card"><a href="garrett.html">Garrett</a></div>
+<div class="brand-card"><a href="nokta.html">Nokta</a></div>
+<div class="brand-card"><a href="quest.html">Quest</a></div>
+<div class="brand-card"><a href="xp.html">XP</a></div>
 </div>
 </section>
 
@@ -241,7 +308,16 @@ profesyonel çözümler sunuyoruz. En iyi markalar, uygun fiyat ve teknik destek
 
 <a href="https://wa.me/905549969820" class="whatsapp">💬</a>
 
+<script>
+let slides = document.querySelectorAll(".slider img");
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}, 4000);
+</script>
+
 </body>
 </html>
-
-
